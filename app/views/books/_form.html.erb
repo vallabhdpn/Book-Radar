@@ -1,0 +1,47 @@
+<%= form_with(model: book) do |form| %>
+  <% if book.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+         <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Book_name, style: "display: block" %>
+    <%= form.text_field :Book_name %>
+  </div>
+
+  <div>
+    <%= form.label :Author, style: "display: block" %>
+    <%= form.text_field :Author %>
+  </div>
+
+  <div>
+    <%= form.label :Owner, style: "display: block" %>
+    <%= form.text_field :Owner %>
+  </div>
+
+  <div>
+    <%= form.label :Contact, style: "display: block" %>
+    <%= form.text_field :Contact %>
+  </div>
+
+  <div>
+    <%= form.label :Location, style: "display: block" %>
+    <%= form.text_field :Location %>
+  </div>
+
+  <div>
+    <%= form.label :Availability, style: "display: block" %>
+    <%= form.check_box :Availability %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
