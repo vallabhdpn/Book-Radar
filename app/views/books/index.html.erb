@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Books</h1>
+
+<% if user_signed_in? %>
+  <p>
+    Signed in as <%= current_user.email %>.
+    <%= link_to 'sign_out', destroy_user_session_path, method: :delete, data: { confirm: 'Are you sure you want to sign out?' } %>
+    # <div>
+    #   <%= form.label :query, "Search for a book" %>
+    #   <%= form.text_field :query, value: params[:query] %>
+    #   <%= form.submit "Search" %>
+    # </div>
+  </p>
+
+  <div id="books">
+    <% @books.each do |book| %>
+      <%= render book %>
+      <p>
+        <%= link_to "Show this book", book %>
+        <% if user_signed_in? && book.user == current_user %>
+        (<%= link_to 'Edit', edit_book_path(book) %>,
+        <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %>)
+      <% end %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New book", new_book_path %>
+<% else %>
+  <%= link_to 'Sign In', new_user_session_path %>
+  <%= link_to 'Sign Up', new_user_registration_path %>
+<% end %>
