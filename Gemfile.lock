@@ -78,7 +78,10 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
+<<<<<<< HEAD
     bcrypt (3.1.20)
+=======
+>>>>>>> b0d0202 (Initial commit)
     bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.3)
@@ -100,12 +103,15 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+<<<<<<< HEAD
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+=======
+>>>>>>> b0d0202 (Initial commit)
     drb (2.2.1)
     erubi (1.13.0)
     globalid (1.2.1)
@@ -160,7 +166,10 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.6-x86_64-linux)
       racc (~> 1.4)
+<<<<<<< HEAD
     orm_adapter (0.5.0)
+=======
+>>>>>>> b0d0202 (Initial commit)
     psych (5.1.2)
       stringio
     public_suffix (6.0.1)
@@ -210,9 +219,12 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.9)
       io-console (~> 0.5)
+<<<<<<< HEAD
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
+=======
+>>>>>>> b0d0202 (Initial commit)
     rexml (3.3.2)
       strscan
     rubyzip (2.3.2)
@@ -247,8 +259,11 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     warden (1.2.9)
       rack (>= 2.0.9)
+=======
+>>>>>>> b0d0202 (Initial commit)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -275,7 +290,10 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+<<<<<<< HEAD
   devise (~> 4.9)
+=======
+>>>>>>> b0d0202 (Initial commit)
   importmap-rails
   jbuilder
   puma (>= 5.0)
